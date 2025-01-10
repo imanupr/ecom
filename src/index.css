@@ -1,12 +1,24 @@
-/* src/App.css */
+/* App.css */
+
+/* Apply a grey background color to the entire body */
 body {
-  font-family: Arial, sans-serif;
-}
-
-header {
-  background-color: #343a40;
-}
-
-.card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    background-color: #f4f4f4; /* Light grey background */
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif; /* Optional: set a default font */
+    color: #333; /* Optional: set text color for readability */
+  }
+  
+  /* Optional: if you have a container wrapper for your app */
+  .app-container {
+    min-height: 100vh; /* Ensure the app takes full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4; /* Grey background for app container */
+    padding: 0; /* Adjust as necessary */
+  }
+  
+  /* Optional: Set a grey background for content area */
+  .content-container {
+    flex-grow: 1; /* Allow the content to take the remaining space */
+  }
+  

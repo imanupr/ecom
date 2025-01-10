@@ -1,0 +1,58 @@
+/* Cart.css */
+
+/* Cart item styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  /* Quantity button styling */
+  .quantity-btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Quantity display */
+  .quantity {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  /* Disabled button when quantity is 1 */
+  .quantity-btn:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+  }
+  
+  /* Remove button styling */
+  .remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c0392b;
+  }
+  

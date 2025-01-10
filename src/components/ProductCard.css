@@ -1,0 +1,99 @@
+/* Container for the grid of product cards */
+.product-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 1rem; /* Space between the cards */
+    margin-top: 2rem;
+    padding: 0 1rem; /* Padding for responsiveness */
+  }
+  
+  /* Card Layout */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Ensures the card content stacks vertically */
+  }
+  
+  /* Hover effect for cards */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the image */
+  .card-img-top {
+    width: 100%; /* Makes sure the image stretches across the entire card width */
+    height: 200px; /* Fixed height for image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Card body styling */
+  .card-body {
+    padding: 1rem;
+    flex-grow: 1; /* Allows the body to take remaining space */
+  }
+  
+  /* Card title styling */
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Description and text styling */
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Price styling */
+  .card-text strong {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Button styling */
+  .btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional - Disabled button */
+  .btn:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+  }
+  
+  /* Media query for responsiveness (medium screens, e.g., tablets) */
+  @media (max-width: 768px) {
+    .product-card-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+  }
+  
+  /* Media query for small screens (e.g., mobile phones) */
+  @media (max-width: 480px) {
+    .product-card-container {
+      grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+  }
+  

@@ -1,14 +1,14 @@
-// src/components/Header.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header({ cartCount }) {
   return (
-    <header className="bg-dark text-white p-3">
-      <div className="d-flex justify-content-between align-items-center">
-        <h1>My E-commerce Site</h1>
-        <div>
-          <span>Cart ({cartCount})</span>
-        </div>
+    <header className="d-flex justify-content-between align-items-center py-3">
+      <h1>My Store</h1>
+      <div>
+        <Link to="/cart" className="btn btn-secondary">
+          Cart ({cartCount})
+        </Link>
       </div>
     </header>
   );
